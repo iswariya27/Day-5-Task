@@ -1,0 +1,203 @@
+ 1. for the given JSON iterate over all for loops
+
+                    //  for-in loop
+//Input: 
+var resume = {
+    "name": "ISWARIYA I",
+    "email": "iswariyaishu27@gmail.com",
+    "phone":"+91-9843848969",
+    "LOCATION": {
+      "address": "No: 75 laveri sq, Thanthai Periyar Nagar",
+      "city": "Villupuram",
+      "District":"Villupuram",
+       "pinCode": "627418",
+      "State":"Tamilnadu",
+    },
+  
+  "EDUCATION": {
+    "institution": "Thiruvalluvar University",
+    "college":"Thevanai Ammal College for Women",
+    "Degree": "BA Eng",
+    "Duration": "2018-2021",
+  },
+ 
+  "LANGUAGES": {
+    "language": "Tamil , English",
+  },
+  "INTEREST": {
+    "name": "Watching movie",
+    "keywords": 
+      "based on true storeies",   
+  },
+}
+for(var i in resume){
+    console.log(i,resume[i]);
+}
+ 
+//Output:
+name ISWARIYA I
+email iswariyaishu27@gmail.com
+phone +91-9843848969
+LOCATION {
+  address: 'No: 75 laveri sq, Thanthai Periyar Nagar',
+  city: 'Villupuram',
+  District: 'Villupuram',
+  pinCode: '627418',
+  State: 'Tamilnadu'
+}
+EDUCATION {
+  institution: 'Thiruvalluvar University',
+  college: 'Thevanai Ammal College for Women',
+  Degree: 'BA Eng',
+  Duration: '2018-2021'
+}
+LANGUAGES { language: 'Tamil , English' }
+INTEREST { name: 'Watching movie', keywords: 'based on true storeies' }
+
+
+                     //for loop iteration
+//Input:
+var resume = [{
+    "name": "ISWARIYA I",
+    "email": "iswariyaishu27@gmail.com",
+    "phone":"+91-9843848969",
+    "LOCATION": {
+      "address": "No: 75 laveri sq, Thanthai Periyar Nagar",
+      "city": "Villupuram",
+      "District":"Villupuram",
+       "pinCode": "627418",
+      "State":"Tamilnadu",
+    },
+  
+  "EDUCATION": {
+    "institution": "Thiruvalluvar University",
+    "college":"Thevanai Ammal College for Women",
+    "Degree": "BA Eng",
+    "Duration": "2018-2021",
+  },
+ 
+  "LANGUAGES": {
+    "language": "Tamil , English",
+  },
+  "INTEREST": {
+    "name": "Watching movie",
+    "keywords": 
+      "based on true storeies",   
+  },
+}];
+for(var i = 0; i<resume.length; i++){
+  console.log(resume[i]);
+}
+
+
+//Output:
+{
+  name: 'ISWARIYA I',
+  email: 'iswariyaishu27@gmail.com',
+  phone: '+91-9843848969',
+  LOCATION: {
+    address: 'No: 75 laveri sq, Thanthai Periyar Nagar',
+    city: 'Villupuram',
+    District: 'Villupuram',
+    pinCode: '627418',
+    State: 'Tamilnadu'
+  },
+  EDUCATION: {
+    institution: 'Thiruvalluvar University',
+    college: 'Thevanai Ammal College for Women',
+    Degree: 'BA Eng',
+    Duration: '2018-2021'
+  },
+  LANGUAGES: { language: 'Tamil , English' },
+  INTEREST: { name: 'Watching movie', keywords: 'based on true storeies' }
+}
+
+
+                                //for of -loop iteration
+
+//Input:
+var num =  [1,2,3,4,5];
+
+for(var newnum of num){
+  console.log(newnum);
+}
+
+//Output:
+1
+2
+3
+4
+5
+
+
+                              //for each-loop iteration
+
+//Input:
+let str = [1,2,3,4,5];
+str.forEach(name => {
+  console.log(name)
+})
+
+//Output:
+1
+2
+3
+4
+5
+
+
+
+2. Create your own resume for JSON format:
+//Input:
+var resume = {
+    "name": "ISWARIYA I",
+    "email": "iswariyaishu27@gmail.com",
+    "phone":"+91-9843848969",
+    "LOCATION": {
+      "address": "No: 75 laveri sq, Thanthai Periyar Nagar",
+      "city": "Villupuram",
+      "District":"Villupuram",
+       "pinCode": "627418",
+      "State":"Tamilnadu",
+    },
+  
+  "EDUCATION": {
+    "institution": "Thiruvalluvar University",
+    "college":"Thevanai Ammal College for Women",
+    "Degree": "BA Eng",
+    "Duration": "2018-2021",
+  },
+ 
+  "LANGUAGES": {
+    "language": "Tamil , English",
+  },
+  "INTEREST": {
+    "name": "Watching movie",
+    "keywords": 
+      "based on true storeies",   
+  },
+}; 
+console.log(resume)
+
+//Output:
+{
+  name: 'ISWARIYA I',
+  email: 'iswariyaishu27@gmail.com',
+  phone: '+91-9843848969',
+  LOCATION: {
+    address: 'No: 75 laveri sq, Thanthai Periyar Nagar',
+    city: 'Villupuram',
+    District: 'Villupuram',
+    pinCode: '627418',
+    State: 'Tamilnadu'
+  },
+  EDUCATION: {
+    institution: 'Thiruvalluvar University',
+    college: 'Thevanai Ammal College for Women',
+    Degree: 'BA Eng',
+    Duration: '2018-2021'
+  },
+  LANGUAGES: { language: 'Tamil , English' },
+  INTEREST: { name: 'Watching movie', keywords: 'based on true storeies' }
+}
+
